@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+
+.title{
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    display: block;
+  
+    position: absolute;
+    background-color: #444444;
+    color: white;
+    margin: 0;
+}
+.pull-left{
+    float:left !important;
+}
+.pull-right{
+    float: right !important;
+}
+.entry-modal{
+    border-radius:6px;
+    width: 300px;
+    margin: auto;
+    z-index: 9999;
+    position: absolute;font-size:18px;
+    left: 50%;
+    top: 30%;
+    margin-left: -150px;
+    padding: 30px;
+    box-shadow:0px 1px 3px 3px #ccc;
+    color: #fff;
+    background-color: #777;
+    text-align: center;
+}
+
+#notification{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    top: 47.33px;
+    font-size: 18pt;
+    width: 100%;
+    background-color: orange;
+}
+
+.meet-area {
+    position: relative;
+    max-height: 100vh;
+}
+.room-input{
+  border: none;
+  padding:5px;
+}
+
+button{
+    margin: 3px;
+    padding: 5px;
+}
+.clear{
+    padding:50px;
+}
+#remote-video{
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+#local-video{
+    bottom: 60px;
+    width: 100px;
+    object-fit: cover;
+    height: 100px;
+    z-index: 1;
+    right: 15px;
+    background-color: #444444;
+    position: absolute;
+    box-shadow:0px 1px 3px 3px #ccc;
+    border-radius:6px;
+}
+.meet-controls-bar{
+    bottom: 0;
+    background-color: black;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
