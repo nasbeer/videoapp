@@ -1,44 +1,48 @@
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
 }
 
-.title{
+.title {
     top: 0;
     width: 100%;
     max-width: 100%;
     z-index: 1;
     display: block;
-  
+
     position: absolute;
     background-color: #444444;
     color: white;
     margin: 0;
 }
-.pull-left{
-    float:left !important;
+
+.pull-left {
+    float: left !important;
 }
-.pull-right{
+
+.pull-right {
     float: right !important;
 }
-.entry-modal{
-    border-radius:6px;
+
+.entry-modal {
+    border-radius: 6px;
     width: 300px;
     margin: auto;
     z-index: 9999;
-    position: absolute;font-size:18px;
+    position: absolute;
+    font-size: 18px;
     left: 50%;
     top: 30%;
     margin-left: -150px;
     padding: 30px;
-    box-shadow:0px 1px 3px 3px #ccc;
+    box-shadow: 0px 1px 3px 3px #ccc;
     color: #fff;
-    background-color: #777;
+    background-color: #444;
     text-align: center;
 }
 
-#notification{
+#notification {
     position: absolute;
     z-index: 1;
     text-align: center;
@@ -54,19 +58,22 @@ body{
     position: relative;
     max-height: 100vh;
 }
-.room-input{
-  border: none;
-  padding:5px;
+
+.room-input {
+    border: none;
+    padding: 5px;
 }
 
-button{
+button {
     margin: 3px;
     padding: 5px;
 }
-.clear{
-    padding:50px;
+
+.clear {
+    padding: 50px;
 }
-#remote-video{
+
+#remote-video {
     top: 0;
     height: 100vh;
     width: 100vw;
@@ -75,7 +82,13 @@ button{
     position: relative;
 }
 
-#local-video{
+.button-border-custom {
+    border-top-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+#local-video {
     bottom: 60px;
     width: 100px;
     object-fit: cover;
@@ -84,10 +97,11 @@ button{
     right: 15px;
     background-color: #444444;
     position: absolute;
-    box-shadow:0px 1px 3px 3px #ccc;
-    border-radius:6px;
+    box-shadow: 0px 1px 3px 3px #ccc;
+    border-radius: 6px;
 }
-.meet-controls-bar{
+
+.meet-controls-bar {
     bottom: 0;
     background-color: black;
     left: 0;

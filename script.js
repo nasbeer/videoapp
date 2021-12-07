@@ -1,5 +1,5 @@
-const PRE = "DELTA"
-const SUF = "MEET"
+const PRE = "NAZ"
+const SUF = "STREAM"
 var room_id;
 var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 var local_stream;
@@ -8,7 +8,7 @@ var peer = null;
 var currentPeer = null
 var screenSharing = false
 function createRoom() {
-    console.log("Creating Room")
+    //console.log("Creating Room")
     let room = document.getElementById("room-input").value;
     if (room == " " || room == "") {
         alert("Please enter room number")
@@ -17,7 +17,9 @@ function createRoom() {
     room_id = PRE + room + SUF;
     peer = new Peer(room_id)
     peer.on('open', (id) => {
-        console.log("Peer Connected with ID: ", id)
+        alert("Peer Connected with ID: ", 1);
+        console.log("Peer Connected with ID: ", id);
+       
         hideModal()
         getUserMedia({ video: true, audio: true }, (stream) => {
             local_stream = stream;
@@ -74,7 +76,7 @@ function joinRoom() {
     hideModal()
     peer = new Peer()
     peer.on('open', (id) => {
-        console.log("Connected with Id: " + id)
+        console.log("Connected with ID: " + id)
         getUserMedia({ video: true, audio: true }, (stream) => {
             local_stream = stream;
             setLocalStream(local_stream)
